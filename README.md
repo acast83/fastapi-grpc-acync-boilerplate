@@ -2,10 +2,13 @@
 
 ## Description
 
-The Fastapi GRPC-REST Template is a modern, scalable application template designed for seamless integration between frontend interfaces and backend
-microservices. At the
-core of its architecture, it leverages the power of gRPC services, known for their high-performance inter-service communication capabilities. This template is ideal for developers
-looking to implement a microservices architecture while maintaining a straightforward and efficient pathway for frontend applications to interact with backend logic.
+The Fastapi GRPC-REST Template is a high-performance,
+scalable application framework that utilizes an asynchronous
+environment for efficient operation. It's built using FastAPI, a modern web framework,
+and incorporates Tortoise ORM for object-relational mapping, ensuring smooth database interactions.
+The template's core feature is its integration of gRPC services, facilitating fast and reliable inter-service communication.
+This makes it a prime choice for developers aiming to deploy a microservices architecture with an easy and effective way for
+frontend to communicate with backend services.
 
 ## Installation
 
