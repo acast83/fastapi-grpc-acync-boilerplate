@@ -1,0 +1,12 @@
+venv
+.venv
+*.env
+.idea
+__pychache__/
+config/environments/credentials.env
+*.pyc
+*.pyo
+*.pyd
+*.log
+.mypy_cache
+my_project.egg-info/

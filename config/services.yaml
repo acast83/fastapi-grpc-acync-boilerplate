@@ -1,0 +1,12 @@
+services:
+  rest:
+    api_gateway:
+      port: 9000
+
+  grpc:
+    users:
+      port: 9001
+    activity_log:
+      port: 9002
+    lookups:
+      port: 9003

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package activitylogservice;
+
+// The Activity log message.
+message CreateMessageRequest {
+  string description = 1;
+}
+
+message CreateMessageResponse {
+  string id = 1;
+  string description = 2;
+}
+
+// The User service definition.
+service ActivityLogService {
+  rpc CreateMessage (CreateMessageRequest) returns (CreateMessageResponse);
+}

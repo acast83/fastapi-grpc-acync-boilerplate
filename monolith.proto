@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+import "services/grpc/activity_log/proto/activity_log.proto";
+import "services/grpc/users/proto/users.proto";
+
+package monolithService;

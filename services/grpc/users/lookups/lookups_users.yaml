@@ -1,0 +1,19 @@
+Users:
+  Roles:
+    ADMIN: a64fc934-fcab-4385-ab67-92f82c805d19
+    REGULAR: 9719d7a0-2753-426d-9474-8aa452c9a0f9
+
+  PreferredLanguages:
+    EN: 0fdcf5ba-3250-4811-bf96-ec724dfdf5b4
+    RS: 94bc08dd-7a5c-4bb9-a37a-13de19d051b8
+    BG: 05b7562e-4378-47f7-b9af-a34b107cede8
+    HR: eafb312a-3380-4475-acdb-1c9874dcde46
+    SI: 84baa252-47a7-40e3-af47-75cffd35ad56
+    DE: 3eaff449-de41-40b1-83bb-83d619c619be
+
+  OrganizationTypes:
+    ORGANIZATION_TYPE: e0ff844d-3f46-48f6-8894-f29b48665c5c
+    POSITION: dae0969c-d684-4f2f-82ec-46401e041aa5
+    CENTRAL_PERSON: c87c83b7-1c00-4502-94dd-fe1566035f52
+    USER: 284bc0d5-9e24-43a3-bafc-426dd8717686
+    EMPLOYEE: c51227b6-c164-4a79-9680-0eb85dfbacaf

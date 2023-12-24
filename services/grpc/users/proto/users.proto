@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package userservice;
+
+// The User message.
+message User {
+  string first_name = 1;
+  string last_name = 2;
+  string email = 3;
+  string username = 4;
+  string password = 5; // Note: In real applications, handle passwords securely.
+}
+
+// Request and response messages for CreateUser.
+message CreateUserRequest {
+  string first_name = 1;
+  string last_name = 2;
+  string email = 3;
+  string username = 4;
+  string password = 5;
+}
+
+message CreateUserResponse {
+  string id = 1;       // Unique identifier for the user.
+  string username = 2; // Username of the created user.
+  string token = 3;    // Authentication or session token.
+
+}
+
+// Request and response messages for UpdateUser.
+message UpdateUserRequest {
+  string username = 1;
+  User user = 2;
+}
+
+message UpdateUserResponse {
+  string first_name = 1;
+  string last_name = 2;
+  string email = 3;
+  string username = 4;
+  string message = 5; // Optional message, e.g., for login status or error information.
+}
+
+// Request and response messages for LoginUser.
+message LoginUserRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginUserResponse {
+  string id = 2;       // Unique identifier for the user.
+  string token = 4;    // Authentication or session token.
+  string message = 5; // Optional message, e.g., for login status or error information.
+}
+
+// Request and response messages for GetCurrentUser.
+message GetCurrentUserRequest {
+  string token = 1;
+}
+message GetCurrentUserResponse {
+  string id = 1;       // Unique identifier for the user.
+  string first_name = 2;
+  string last_name = 3;
+  string email = 4;
+  string username = 5;
+}
+
+
+// The User service definition.
+service UserService {
+  rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
+  rpc UpdateUser (UpdateUserRequest) returns (UpdateUserResponse);
+  rpc LoginUser (LoginUserRequest) returns (LoginUserResponse);
+  rpc GetCurrentUser (GetCurrentUserRequest) returns (GetCurrentUserResponse);
+}

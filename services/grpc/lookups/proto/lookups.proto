@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package lookupsservice;
+
+// The request message for a lookup.
+message LookupRequest {
+  string query = 1;
+}
+
+// The response message for a lookup.
+message LookupResponse {
+  repeated string results = 1;
+}
+
+// The Lookups service definition.
+service LookupsService {
+  // A method for performing a lookup.
+  rpc GetLookups (LookupRequest) returns (LookupResponse);
+}
