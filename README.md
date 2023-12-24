@@ -1,4 +1,4 @@
-# Fastapi GRPC template application
+# Fastapi GRPC asynchronous template application
 
 ## Description
 
