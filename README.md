@@ -9,7 +9,7 @@ looking to implement a microservices architecture while maintaining a straightfo
 
 ## Installation
 
-create a new directory and clone the Fastapi boilerplate base application into it
+create a new directory and clone the Fastapi template application into it
 
 ```
 mkdir project_name
